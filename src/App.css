@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: url('/src/assets/download.webp') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 5%;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 1%;
+  left: 6%;
+  font-size: 5rem;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+.upload-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.upload-button {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#file-upload {
+  display: none;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.custom-upload:hover {
+  color: #de0611;
+  border-color: #de0611;
+}
+
+
+.card{
+    width:400px;
+    background:rgba(255, 255, 255, 0.1);
+    padding:40px;
+
+    border-radius: 15px;
+    text-align: center;
+    color:#333;
+}
+.card img{
+    width:180px;
+    height:180px;
+    border-radius: 50%;
+    margin-top:40px;
+    margin-bottom:30px;
+}
+label{
+    display:block;
+    width:250px;
+    margin-left: 30px;
+    background:white;
+    color:rgb(0, 0, 0);
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:'Playfair Display', serif ;
+}
+input{
+    display:none;
+}
+.upload-btn {
+  display: block;
+  width: 250px;
+  margin: 15px auto;
+  background: #007BFF;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.upload-btn:hover {
+  background: #0056b3;
+}
+
+.spoiled-text {
+  color: red;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.fresh-text {
+  color: green;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+}
